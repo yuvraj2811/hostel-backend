@@ -10,6 +10,7 @@ const userModel = require('./model/user')
 
 app.get('/',(req,res)=>{
 res.send('hello')
+
 })
 
 app.post('/create', async (req,res)=>{

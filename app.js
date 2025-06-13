@@ -6,7 +6,7 @@ require('dotenv').config();
 app.use(express.json());
 
 
-const userModel = require('../model/user')
+const userModel = require('./model/user')
 
 app.get('/',(req,res)=>{
 res.send('hello')
@@ -32,4 +32,4 @@ app.get('/getall' ,async (req,res)=>{
 
 
 
-module.exports = app;
+app.listen(process.env.PORT)

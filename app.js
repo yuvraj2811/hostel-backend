@@ -8,8 +8,9 @@ app.use(express.json());
 
 const userModel = require('./model/user')
 
-app.get('/',(req,res)=>{
+app.get('/',(req,res,next)=>{
 res.send('hello')
+next()
 
 })
 

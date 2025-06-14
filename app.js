@@ -58,7 +58,7 @@ app.put('/update/:id', async (req, res) => {
       institution: req.body.institution,
       course: req.body.course,
     },
-    { new: true }
+    { new: true,runValidators:true }
   );
   res.send(updatedUser);
 });
